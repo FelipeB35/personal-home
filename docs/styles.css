@@ -1,0 +1,172 @@
+/* Estilos específicos para las tres tarjetas */
+.custom-card {
+    border-radius: 15px; /* Bordes redondeados */
+    height: 200px; /* Altura fija */
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+/* Alinear el contenido hacia la parte superior */
+.custom-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Título de las tarjetas */
+.custom-card-title {
+    margin-top: 10px; /* Espacio superior para ajustar la posición */
+    font-weight: bold; /* (Opcional) Resaltar el texto */
+}
+
+.img-fluid.rounded-start{
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Contenedor general */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Tarjeta principal */
+.main-card {
+    width: 350px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+/* Mini card */
+.mini-card {
+    width: 200px;
+    height: 130px;
+    margin: 0 auto;
+    perspective: 1000px; /* Profundidad para el efecto 3D */
+}
+
+.mini-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+/* Efecto de giro al pasar el mouse */
+.mini-card:hover .mini-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Frontal y trasera de la mini tarjeta */
+.mini-card-front,
+.mini-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Parte frontal: Imagen */
+.mini-card-front {
+    background-color: white;
+}
+
+.mini-card-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* Parte trasera: Texto */
+.mini-card-back {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.main-cards-button{
+    margin: 20px;
+}
+
+#progress-bar {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.mui-container{
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.card-img-top{
+    max-width: 100%;
+    height: auto;
+}
+
+#details{
+    text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+#communities-title{
+    text-align: center;
+}
+
+#bottom-space-social{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#main-div-entrepreneurship,
+#main-div-hobbies {
+    margin: 20px;
+    text-align: center;
+}
+
+#myneflow-card-main-text{
+    text-justify: auto;
+}
+
+.hobbies-card‑row {
+    display: flex;            /* activate flexbox */
+    flex-wrap: wrap;          /* wrap to next line on small screens */
+    justify-content: center;  /* center them horizontally */
+    gap: 1rem;                /* consistent space between cards */
+    margin: 2rem 0;           /* optional outer spacing */
+  }
+
+
+  
